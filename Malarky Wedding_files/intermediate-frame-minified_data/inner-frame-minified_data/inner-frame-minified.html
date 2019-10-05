@@ -1,0 +1,42 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- base href="https://168319142-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html?jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.4CFxRrSvxq0.O%2Fam%3DwQE%2Fd%3D1%2Frs%3DAGLTcCNk69adtZYbtfIwiKKtklVg1Iw-vg%2Fm%3D__features__" --><link href="inner-frame-minified_data/css.css" rel="stylesheet"> 
+
+</head><body><h1 id="timer">307 days away</h1>
+
+<script>
+			
+		var countDownDate = new Date("Aug 8, 2020 15:00:00").getTime();
+
+		var x = setInterval(function() {
+
+			var now = new Date().getTime();
+
+			var distance = countDownDate - now;
+
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		  	document.getElementById("timer").innerHTML = days + " days away";
+
+		  	if (distance < 0) {
+		  		clearInterval(x);
+		  		document.getElementById("timer").innerHTML = "We did it";
+		  	}
+		}, 1000);
+</script>
+<style>
+#timer {
+  margin: 0;
+  padding: 0;
+text-align: center;
+color: #79949f;
+font-family: 'Merriweather', serif;
+font-size: 12vw;
+text-shadow: .3vw .5vw #E2c6c5;
+overflow-y: hidden;
+}
+
+</style>
+</body></html>
